@@ -4,7 +4,8 @@ public class phiFunction {
 	public static void main(String[] args) {
 		Scanner inScanner = new Scanner(System.in);
 		int n = inScanner.nextInt();
-			System.out.print(phi(n));
+		int p = phi(n);
+			System.out.print(p);
 			}
 
 	private static int phi(int n) {

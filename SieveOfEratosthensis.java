@@ -8,6 +8,7 @@ public class SieveOfEratosthensis {
 			for(int i = 2;i<=n;i++)
 				prime[i] = true;
 			for(int i = 2;i*i<=n;i++) {
+				boolean ss = prime[i];
 				if(prime[i] == true)
 				{	
 					for(int j = i*i;j<=n; j = j+i) {
@@ -15,9 +16,15 @@ public class SieveOfEratosthensis {
 					}
 				}
 			}
-			for(int i = 0;i<=n;i++) {
-				if(prime[i] ==true)
-				System.out.println(i + " ");
-			}
+			// for(int i = 0;i<=n;i++) {
+			// 	if(prime[i] ==true)
+			// 	System.out.println(i + " ");
+			// 	else
+			// 	System.out.println("cp");
+			// }
+			if(prime[n] == true)
+			System.out.println("PRIME");
+			else
+			System.out.println("NOT PRIME");
 	}
 }
