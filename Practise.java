@@ -16,13 +16,15 @@ public class Practise {
                     }
                 }
         }
-        if(prime[n]==true)
-        System.out.println("PRIME");
-        else
-        System.out.println("NON PRIME");
-        	// 		for(int i = 0;i<=n;i++) {d
-			// 	if(prime[i] ==true)
-			// 	System.out.println(i + " ");
-			// }
+        // if(prime[n]==true)
+        // System.out.println("PRIME");
+        // else
+        // System.out.println("NON PRIME");
+        int count = 0;
+        			for(int i = 0;i<=n;i++) {
+				if(prime[i] ==true)
+				count++;
+			}
+            System.out.println(count);
     }
 }

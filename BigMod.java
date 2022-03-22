@@ -15,7 +15,7 @@ public class BigMod {
             if(power==0)
             return 1%mod;
         int x = FBigMod(base, power/2, mod);
-        // System.out.print(x+" ");
+
         x = (x*x) % mod;
         if(power%2==1)
             x=(x*base)%mod;
